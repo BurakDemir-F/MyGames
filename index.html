@@ -146,6 +146,20 @@
   display: block;
 }
 
+    .media-wrapper.vertical-media {
+  max-width: 320px; /* Videonun yatayda devasa büyümesini engeller */
+  margin: 0 auto 16px auto; /* Ortalar ve alt boşluk bırakır */
+  border-radius: 8px;
+}
+
+.media-wrapper.vertical-media video,
+.media-wrapper.vertical-media img {
+  width: 100%;
+  height: auto;
+  max-height: 520px; /* Dikeyde ekrandan taşmayacak makul yükseklik */
+  object-fit: contain;
+}
+
     .game-description {
       font-size: 1.15rem;
       margin-bottom: 16px;
@@ -293,8 +307,10 @@
       <article class="game-card">
         <h2>🌿 Sorcerum: Healer</h2>
         <div class="media-wrapper">
-          <img src="./images/alchemyShop.png" alt="Sorcerum Oynanış">
-        </div>
+        <video autoplay loop muted playsinline>
+              <source src="./images/sorcerumHealerLast.mp4" type="video/webm">
+          </video>
+          </div>
         <p class="game-description">
           Alchemy shop simulator and resource management game with editor for dialog tree and characters.
         </p>
@@ -305,16 +321,17 @@
 
       <!-- PROJE 7: Örnek Şablon -->
       <article class="game-card">
-        <h2>🧙 Proje Başlığı 7</h2>
+        <h2> Neon Hop 3D</h2>
         <div class="media-wrapper">
-          <img src="./images/proje7.gif" alt="Proje 7 Görseli">
-        </div>
+        <video autoplay loop muted playsinline>
+              <source src="./images/neonHop3d.mp4" type="video/webm">
+          </video>
+          </div>
         <p class="game-description">
-          Oyun hakkında kısa tanıtım metni buraya gelecek.
+          It is a logic-puzzle game where you clear the entire area by selecting colored balls in the correct order to break, layer by layer, the matching-colored disks located on towers across the grid.
         </p>
         <div class="links">
-          <a href="#" target="_blank" class="btn">GitHub Deposu</a>
-          <a href="#" target="_blank" class="btn">Demo</a>
+          <a href="https://github.com/BurakDemir-F/Neon-Hop-3D" target="_blank" class="btn">GitHub</a>
         </div>
       </article>
 
