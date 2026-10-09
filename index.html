@@ -90,6 +90,55 @@
       gap: 45px;
     }
 
+/* Yazar & Sosyal Profil Alanı */
+.author-profile {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--title-color);
+  letter-spacing: 0.5px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--title-color);
+  background: var(--parchment-light);
+  border: 1px solid var(--border-dark);
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.social-btn:hover {
+  background: var(--title-color);
+  color: #fff;
+  border-color: var(--title-color);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
     /* Tekil Proje Parşömen Kartı */
     .game-card {
       background: var(--parchment-light);
@@ -210,8 +259,24 @@
 
   <div class="container">
     <header>
-      <h1>📜 Bağımsız Oyunlar & Projeler</h1>
-      <p>Şirket dışı çalışmalarım, oyun prototiplerim ve deneysel projelerim</p>
+      <h1>📜 Games & Projects</h1>
+      <p>My side projects, game prototypes, and experimental projects</p>
+
+      <div class="author-profile">
+    <div class="author-name">Burak Demir</div>
+    <div class="social-links">
+      <a href="https://github.com/BurakDemir-F" target="_blank" class="social-btn">
+        🐙 GitHub
+      </a>
+      <a href="https://linkedin.com/in/burak-demir-81a50722a" target="_blank" class="social-btn">
+        💼 LinkedIn
+      </a>
+      <!-- İsteğe bağlı e-posta butonu -->
+      <a href="mailto:burakfdemirbusiness@gmail.com" class="social-btn">
+        ✉ İletişim
+      </a>
+    </div>
+  </div>
     </header>
 
     <div class="projects-list">
